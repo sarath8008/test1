@@ -1,12 +1,18 @@
 #!/bin/bash
-echo "enter the number to sum of all even numbers"
-read n
+
+# Generate a random number between 10 and 100
+n=$((RANDOM % 91 + 10))  # Ensures the number is between 10 and 100
+
+echo "Random number generated: $n"
+
+sum=0
 i=2
-while [ $i -lt $n ]
+
+while [ $i -le $n ]
 do
-#sum=$((sum + i))
-sum=`expr $sum + $i`
-#i=$((i + 2))
-i=`expr $i + 2`
+    sum=$((sum + i))
+    i=$((i + 2))
 done
-echo " sum of  even numbers are $sum "
+
+echo "Sum of all even numbers up to $n is: $sum"
+
