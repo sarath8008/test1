@@ -7,4 +7,4 @@ do
 fact=$((fact * num ))
 num=$((num - 1))
 done
-echo  " factorial of  given  number is $fact "
+echo  " factorial to the given  number is $fact "
