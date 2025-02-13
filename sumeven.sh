@@ -14,5 +14,5 @@ do
     i=$((i + 2))
 done
 
-echo "Sum of all even numbers up to $n is: $sum"
+echo "Sum of    all even numbers up to $n is: $sum"
 
